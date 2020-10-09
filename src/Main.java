@@ -9,6 +9,7 @@ public class Main {
         System.out.println(divide(firstVal,secondVal));
         System.out.println(substract(firstVal,secondVal));
         System.out.println(factorial(secondVal));
+        System.out.println(squareRoot(sqrtroot));
     }
 
     public static double substract(double firstVal, double secondVal) {
@@ -33,5 +34,20 @@ public class Main {
             res *= i;
         }
         return res;
+    }
+    
+    public static double squareRoot(int num)   
+    {  
+    
+        double t;  
+        double sqrtroot=num/2;  
+        do   
+        {  
+            t=sqrtroot;  
+            sqrtroot=(t+(num/t))/2;  
+        }   
+        while((t-sqrtroot)!= 0);  
+        return sqrtroot;  
+        }  
     }
 }
