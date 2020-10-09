@@ -14,11 +14,19 @@ public class Main {
     public static double substract(double firstVal, double secondVal) {
         return firstVal-secondVal;
     }
+    
+    public static double addition(double firstVal, double secondVal) {
+        return firstVal + secondVal;
+    }
 
     public static double divide(double firstVal, double secondVal) {
         return firstVal/secondVal;
     }
-
+    
+     public static double multiplication(double firstVal, double secondVal) {
+        return firstVal*secondVal;
+    }
+    
     public static double factorial(double num) {
         double res = 1;
         for (int i=1; i<=num; i++) {
